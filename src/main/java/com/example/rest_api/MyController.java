@@ -24,6 +24,7 @@ public class MyController {
         return studentService.getAllStudent();
     }
 
+    //to post student
     @PostMapping("/post")
     public Students createUser(@RequestBody Students students) {
         return studentService.createStudent(students);
